@@ -1,0 +1,232 @@
+/* First, let's set the style to apply to the entire page body */
+
+body {
+    background-color: #141414;
+    color: #F9F9F4;
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+:root {
+    --lemon: #EFFF52;
+    --forest: #232a27;
+    --black: #141414;
+    --white: #F9F9F4;
+}
+
+
+
+
+/* Here is some style for the base HTML elements */
+
+section {
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+
+p {
+    font-weight: 100;
+}
+
+li {
+    padding-right: 40px;
+}
+
+button {
+    background-color: var(--lemon);
+    font-size: 0.8em;
+    min-height: 40px;
+    font-weight: 700;
+    border: none;
+    margin-top: 10px;
+    margin-right: 5px;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+
+
+/* Below are a few styled classes for the navbar */
+
+.nav-bar {
+    position: fixed;
+    width: 100%;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: #EFFF52;
+    padding: 20px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.nav-logo {
+    max-width: 50px;
+    min-width: 50px;
+    margin-left: 10px;
+}
+
+.nav-items-div {
+    margin-right: 40px;
+}
+
+.nav-item {
+    margin: 18px;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #141414;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/* Here are the class styles for everything else */
+
+.container {
+    margin: auto;
+    max-width: 1200px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.hero {
+    color: var(--black);
+    background-color: var(--lemon);
+}
+
+.button-primary-hero {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.button-secondary-hero {
+    color: var(--black);
+    background-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.hero-container {
+    margin: auto;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 150px;
+}
+
+.hi {
+    font-size: 2.5em;
+}
+
+.hi-div {
+    display: flex;
+}
+
+.handwave {
+    max-width: 40px;
+    margin-left: 20px;
+}
+
+.intro {
+    font-weight: 300;
+    font-size: 1.5em;
+}
+
+.portrait {
+    max-width: 400px;
+    margin-left: 30px;
+    border-radius: 20px;
+    rotate: 2deg;
+}
+
+.skills-line {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skills {
+    background-color: var(--forest);
+    font-size: 1.6em;
+}
+
+/*
+
+.featured-project {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+*/
+
+.cf-div {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+}
+
+.form-field {
+    margin-bottom: 10px;
+    min-height: 30px;
+    padding-left: 5px;
+    background-color: #141414;
+    color: #F9F9F4;
+    font-size: 0.8em;
+    padding: 12px;
+    border-style: none;
+}
+
+/* created a seperate class for the submuit button mainly to add a black border around the button to make it stand out with the lighter background */
+.submit-button {
+    background-color: #EFFF52;
+    font-size: 0.8em;
+    min-height: 40px;
+    font-weight: 700;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #141414;
+    padding: 15px;
+}
+
+.button-secondary {
+    color: #F9F9F4;
+    background-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.footer {
+    background-color: #EFFF52;
+    color: #141414;
+}
+
+
+
+
+/* And finally, here is a styled id */
+
+#contact {
+    background-color: #F9F9F4;
+    color: #141414;
+}

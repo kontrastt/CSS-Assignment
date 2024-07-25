@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="styles/wc-stylesheet.css" rel="stylesheet"/>
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+
+        <title>Tom's Online Portfolio</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+    </head>
+
+    <body>
+        <nav class="nav-bar">
+        <!--At first, made the mistake of using a forward slash BEFORE the images directory below ("/images/logo.svg"). Removed the forward slash after I tested and saw that the logo was not displayed properly-->
+            <div class="nav-logo">
+                <a href="Index.html"><img src="images/logo.svg" alt="Website Logo"></a>
+            </div>
+                <!--Page nav links below had a forward slash before the page .html file (href=“/index.html”). Tested and saw that those links don’t work either. Removed forward slash. Tested again – Links are functions. These changes are not reflected in the DOM chart.-->
+            <div class="nav-items-div">
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="work.html" class="nav-item">Work</a>
+                <a href="about.html" class="nav-item">About</a>
+                <a href="contact.html" class="nav-item">Contact</a>
+            </div>    
+        </nav>
+
+
+
+        <section class="hero">
+            <div class="hero-container">
+            <!--All the content within this section initally was enclosed with another div that was later removed as there was no need for it. The original version can be seen in the DOM chart-->
+                <div>
+                    <div class="hi-div">
+                        <h1 class="hi"><span style="color: #232A27;">Hi</span>, I'm Tom!</h1> 
+                        <img src="images/hand-solid.svg" alt="handwave" class="handwave">
+                    </div>
+                    <h2 class="intro">A Visual and UX/UI Designer from Calgary, AB, Canada. Currently studying Interactive Design with a major in UX Design at the Southern Alberta Institute of Technology.</h2>
+                <!--the button below was edited into being an in-page link that when clicked will send the user to the contact section on this page-->
+                    <a href="#contact"><button class="button-primary-hero">Contact Me!</button></a>
+                    <button class="button-secondary-hero">See My Work</button>
+                </div>
+
+                <div>
+                    <img src="https://assets-global.website-files.com/612a739e5e1a647b7332e04d/623d59f692de34439cc29c7f_ARTphoto.jpg" alt="Portrait photo" class="portrait">
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="skills">
+            <div class="container">
+            <div>
+                <h2>Skills</h2>
+            </div>
+
+            <div>
+                <!--I switched from using <h3> elements for the skills below to using both <ul> and <ol> instead to make a better use of this elements-->
+                <ul class="skills-line">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JaveScript</li>
+                    <li>Photoshop</li>
+                    <li>Illustrator</li>
+                </ul>
+
+                <ol class="skills-line">
+                    <li>Premiere Pro</li>
+                    <li>Webflow</li>
+                    <li>Figma</li>
+                    <li>Spline</li>
+                    <li>Canva</li>
+                </ol>
+            </div>
+        </div>
+        </section>
+
+
+
+        <section class="featured-project">
+            <div class="container">
+            <h2>Featured Project</h2>
+            <div>
+                <img src="https://assets-global.website-files.com/612a739e5e1a647b7332e04d/62acc28dd658cb0c9ce68025_Frame%20325Thumbnail.jpg" style="width: 500px" alt="Featured Project Thumbnail">
+            </div>
+
+            <div>
+                <h3>PICNIC</h3>
+                <p>Bacon ipsum dolor amet burgdoggen pork prosciutto short loin, boudin venison pork loin ribeye brisket chicken swine pork belly kielbasa. Picanha spare ribs meatloaf prosciutto strip steak buffalo.</p>
+                <button>See Project</button>
+                <button class="button-secondary">More Work...</button>
+            </div>
+            
+        </div>
+        </section>
+
+
+
+        <section class="contact" id="contact">
+            <div class="container">
+            <div>
+                <h2>Let's Chat!</h2>
+                <p>Looking to hire me? Want to collaborate</p>
+            </div>
+
+            <div>
+                <form class="cf-div">
+                    <input type="text" id="name" placeholder="Name" class="form-field" >
+                    <input type="text" id="message" placeholder="Message" class="form-field">
+                    <input type="submit" id="submit" class="submit-button">
+                </form>
+            </div>
+        </div>
+        </section>
+
+
+        <section class="footer">
+            <div class="container">
+                <img src="images/logo.svg" alt="Website Logo" width="40px">
+
+            <div>
+                <table>
+                    <tr>
+                        <th>Email:</th>
+                        <!--edit 1: <td> below was converted to an <a> link element with a mailto: href to make the email address text send the user to sending an email from their preferred email app on their device-->
+                        <!--edit 2: had the td element enclosed within the a element. When testing found out that the link does not work. Switched to an a element within a td element: link is working now-->
+                        <td><a href="mailto:hi@artkhr.com">hi@artkhr.com</a></td>
+                    </tr>
+
+                    <tr>
+                        <th>Phone</th>
+                        <td>(403)-111-2345</th>
+                    </tr>
+                </table>
+
+                <div>
+                    <a href="https://instagram.com">Instagram</a>
+                    <a href="https://linkedin.com">LinkedIn</a>
+                    <a href="https://behance.com">Behance</a>
+                </div>
+            </div>
+        </div>
+        </section>
+    </body>
+</html>
